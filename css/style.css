@@ -1,0 +1,429 @@
+/* =========================
+   GENERAL RESET & BODY
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =========================
+   HEADER & NAVIGATION
+========================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #0b3d2e;
+  color: white;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header img {
+  height: 50px;
+}
+
+.header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.header nav a:hover {
+  color: #c9a24d;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+  background: linear-gradient(90deg, #c9a24d, #f2d16b);
+  color: #0b3d2e;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero-advanced {
+  text-align: center;
+  padding: 60px 20px;
+  background: #0b3d2e;
+  color: white;
+  position: relative;
+}
+
+.hero-advanced h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-advanced p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 25px;
+}
+
+.hero-advanced .hero-btn {
+  margin-top: 15px;
+}
+
+.academy-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 25px;
+  border-radius: 10px;
+  min-width: 120px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s;
+}
+
+.stat-box:hover {
+  transform: scale(1.05);
+}
+
+.stat-box h3 {
+  font-size: 28px;
+  color: #c9a24d;
+  margin: 0;
+}
+
+.stat-box p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* =========================
+   FEATURES / WHY CHOOSE US
+========================= */
+.why-choose {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 35px;
+}
+
+.feature-card {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h3 {
+  color: #0b3d2e;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+/* =========================
+   COURSES
+========================= */
+.courses-advanced {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.courses-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 25px;
+}
+
+.course-card {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.course-card h3 {
+  color: #0b3d2e;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   HOW IT WORKS
+========================= */
+.how-it-works {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.steps-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.step-box {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  max-width: 280px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+.testimonials {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  margin: 20px auto;
+  max-width: 650px;
+  font-style: italic;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   TEACHERS
+========================= */
+.teachers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.teacher-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 25px 20px;
+  max-width: 240px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.teacher-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.teacher-card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.teacher-card h3 {
+  color: #0b3d2e;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.teacher-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* =========================
+   CONTACT / ENROLL FORMS
+========================= */
+.contact-form {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #c9a24d;
+  box-shadow: 0 0 8px rgba(201, 162, 77, 0.3);
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+}
+
+/* SUCCESS / ERROR MESSAGES */
+.success-message {
+  display: none;
+  background: #e6f7ef;
+  color: #0b3d2e;
+  border-left: 5px solid #3fa46a;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.error-message {
+  display: none;
+  background: #fdecea;
+  color: #a94442;
+  border-left: 5px solid #d9534f;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: #0b3d2e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-3px);
+  background: #1ebe5d;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .hero-advanced h1 {
+    font-size: 28px;
+  }
+  .hero-advanced p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .features-grid,
+  .courses-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .steps-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .academy-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .teacher-card {
+    max-width: 100%;
+  }
+  .contact-form {
+    width: 90%;
+    padding: 20px;
+  }
+}
